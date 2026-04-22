@@ -26,13 +26,13 @@ pv_tp2_grupo20/
 ├── index.html          # Página principal
 ├── assets/             # 
 │   └── images          # Carpeta de imágenes
-├──  css                # Carpeta .css
+├── css                 # Carpeta .css
 └── js/                 # Carpeta .js (desarrollo de ejercicios)
     ├── ejercicio1.js   # Parte 1
     ├── ...
     ├── ejercicio19.js  # Parte 2
     └── ...
-
+```
 ---
 
 **Proyecto realizado para:** Programación Visual 2026  
