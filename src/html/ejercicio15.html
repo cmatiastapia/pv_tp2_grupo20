@@ -1,0 +1,31 @@
+<!--
+15. Escribir una función llamada retornarMes, que reciba un número entero y si 
+corresponde a un mes del año devolver el nombre del mes, si no se cumple entonces 
+mostrar un mensaje que no es un mes.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+</head>
+<body>
+    <script>
+        function retornarMes(numero) {
+            const meses = [
+                "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+                "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+            ];
+            if (numero >= 1 && numero <= 12) {
+                return meses[numero - 1];
+            } else {
+                return "No es un mes válido";
+            }
+        }
+
+        const numeroMes = parseInt(prompt("Ingrese un número para obtener el mes correspondiente:"));
+        alert(retornarMes(numeroMes));
+    </script>
+</body>
+</html>
