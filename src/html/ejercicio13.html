@@ -1,0 +1,35 @@
+<!--13. Escribir una función llamada mostrarArreglo que reciba un arreglo numérico como
+parámetro e imprima cada elemento en una línea a parte. El usuario debe ingresar
+cuantos números se almacenarán en el array e ingresar cada número de forma iterativa.
+ -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title> 
+</head>
+
+
+<body>
+    <script>
+        function mostrarArreglo(arreglo){
+            document.write("<h3>Los numeros ingresados son: </h3>");
+          for(let i=0; i<arreglo.length; i++){
+            document.write( arreglo[i] + "<br>");}
+        }
+    
+     let cantidad_num=parseInt(prompt("cuantos numeros desa ingresar"));
+     let array_numeros=[];
+
+      for(let i=0; i<cantidad_num; i++){
+          let num=parseInt(prompt("ingrese el numero"));
+          array_numeros.push(num);
+      }
+      mostrarArreglo(array_numeros);
+    </script>
+
+</body>
+
+</html>
