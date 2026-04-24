@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 10</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 10</h1>
+        <script>
+            let cantidad_num=parseInt(prompt("cuantos numeros desa ingresar"));
+
+            let array_numeros=[];
+            let suma=0;
+
+            for(let i=0; i<cantidad_num; i++){
+                let num=parseInt(prompt("ingrese el numero"));
+                array_numeros.push(num);
+                suma =suma+num;
+            }
+
+            let promedio=suma/cantidad_num
+            document.write("<h3>Los numeros ingresados son: "+array_numeros+"<br></h2>");
+            document.write("<h3>El promedio es: "+promedio+"</h3>");
+
+
+        </script>   
+
+    </body>
+
+</html>
