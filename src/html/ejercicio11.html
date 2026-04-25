@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio11</title>
+</head>
+<body>
+    <h1>Ejercicio 11</h1>
+    <script>
+    const calcularConsumo = () => {
+        const km = prompt("Ingrese el número de kilometros recorridos por su vehiculo:");
+        const litros = prompt("Ingrese el número de litros de combustible consumidos por su vehiculo:");
+
+        // Verificar si dejo vacio alguno de los campos
+        if (km === null || litros === null || km === "" || litros === "" || isNaN(km) || isNaN(litros)) {
+            document.write(`<p style="color: red; font-size: x-large; font-weight: bold;">Operación cancelada o datos incompletos.</p>`);
+        } else {
+            const nKm = Number(km);
+            const nLitros = Number(litros);
+
+            //  división por cero
+            if (nKm <= 0) {
+                document.write(`<p style="color: red;font-size: 20px; font-weight: bold;">Los kilometros deben ser mayores a cero.</p>`);
+            } else {
+                const consumo = nLitros / nKm;
+                
+                document.write(`<h3>Resultados:</h3>`);
+                document.write(`<p>Kilómetros: ${nKm} km</p>`);
+                document.write(`<p>Litros: ${nLitros} L</p>`);
+                document.write(`<p>El consumo es: <b>${consumo}</b> L/km</p>`);
+            }
+        }
+    }
+    calcularConsumo();
+</script>
+
+</body>
+</html>
