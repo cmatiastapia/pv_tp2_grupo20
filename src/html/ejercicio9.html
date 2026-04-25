@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio9</title>
+</head>
+<body>
+    <h1>Ejercicio 9</h1>
+    <script>
+        const saludo= () =>{
+            const apellido = prompt("Ingrese su apellido:");
+            const nombre = prompt("Ingrese su nombre:");
+            if (apellido === null || nombre === null || apellido === "" || nombre === "" || isNaN(apellido)==false || isNaN(nombre)==false) {
+            document.write(`<p style="color: green ; font-size: x-large; font-weight: bold;">Operacion cancelada o datos incompletos.</p>`);
+            }else{
+                document.write(`¡Hola ${nombre} ${apellido}. 
+                                 Bienvenido a Programación Visual!`);
+            }
+        }
+        saludo()
+    </script>
+    
+</body>
+</html>
