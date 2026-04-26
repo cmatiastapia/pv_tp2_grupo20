@@ -1,0 +1,36 @@
+<!-- DESARROLLO DEL EJERCICIO 14 - TP2 -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 - Programación Visual</title>
+</head>
+<body>
+   <h1>Ejercicio 14</h1> 
+   <h2>Duplicar valores de un arreglo</h2>
+   <script>
+    /* Funcion flecha para duplicar los valores del arreglo */
+    const duplicarArreglo = (arreglo) => arreglo.map(numero => numero * 2); /* Retorna un nuevo arreglo con los valores duplicados */
+
+    /* Interaccion por panttalla */
+    const cantidad = Number(prompt("Ingrese la cantidad de números que desea duplicar: ")); /* Mensaje por pantalla */
+    const arregloOriginal = []; /* Arreglo para almacenar los números ingresados */
+
+    /* Carga de numeros en el arrglo - Bucle FOR */
+    for (let i=0; i<cantidad; i++){
+        let numero = Number(prompt(`Ingrese el número ${i+1}: `)); 
+        arregloOriginal.push(numero);
+    }
+
+    /* Llamada a la función para duplicar los valores del arreglo y creacion del nuevo arreglo */
+    const arregloDuplicado = duplicarArreglo(arregloOriginal);
+
+    /* Resultados */
+    document.write("<h3>Resultados:</h3>");
+    document.write(`<p>Arreglo original: [${arregloOriginal}]</p>`);
+    document.write(`<p>Arreglo duplicado: [${arregloDuplicado}]</p>`);
+   </script>
+</body>
+</html>
