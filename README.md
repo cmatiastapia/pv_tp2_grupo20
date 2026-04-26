@@ -21,17 +21,18 @@ Para este trabajo práctico, el grupo se rige por los siguientes estándares té
 
 ## 📂 Estructura del Proyecto
 ```text
-pv_tp2_grupo20/
-├── README.md           # Documentación del proyecto
-├── index.html          # Página principal
-├── assets/             # 
-│   └── images          # Carpeta de imágenes
-├── css                 # Carpeta .css
-└── js/                 # Carpeta .js (desarrollo de ejercicios)
-    ├── ejercicio1.js   # Parte 1
-    ├── ...
-    ├── ejercicio19.js  # Parte 2
-    └── ...
+pv_tp2_grupo20
+├── /src                    
+|   ├── /html                # Desarrollo de ejercicios HTML
+|   |  ├── /ejercicio9.html 
+|   |  └── ...
+|   │
+|   └── /js                  # Desarrollo de ejercicios JavaScript
+|      ├── /ejercicio1.js
+|      └── ...
+|
+├── index.html               # Página principal
+└── README.md                # Documentación del proyecto
 ```
 ---
 
