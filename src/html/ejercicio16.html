@@ -1,0 +1,48 @@
+<!-- DESARROLLO DEL EJERCICIO 16 - TP2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 - Programación Visual</title>
+</head>
+<body>
+    <h1>Ejercicio 16</h1>
+    <h2>Sumar el rango de dos elementos</h2>
+    <script> 
+        /* Funcion flecha para sumar el rango de dos elementos */
+        const sumarRango = (numeroInicial, numeroFinal) => {
+            let suma = 0; /* Variable para almacenar la suma */
+            for(let i=numeroInicial; i<=numeroFinal; i++){
+                suma += i;
+            }
+            return suma;
+        };
+
+        /* Variables para numero inicial, final y para la validez de los numeros */
+        let nInicial, nFinal;
+        let esValido = false; /* Valida si los numeros correctos */
+
+        /* Interaccion por pantalla */
+        do {
+            nInicial = Number(prompt("Ingrese el número inicial del rango: ")); /* Solicitud del numero inicial por pantalla */
+            nFinal = Number(prompt("Ingrese el número final del rango: ")); /* Solicitud del numero final por pantalla */
+            if (nInicial < nFinal){
+                esValido = true; /* Si el numero inicial es menor al numero final, los numeros son validos */
+            }
+            else{    
+                alert("El número inicial debe ser menor que el número final. Por favor, ingrese los números nuevamente."); /* Mensaje de error por pantalla */
+            }
+        }
+        while(!esValido); /* Repite el proceso hasta que los numeros sean correctos */
+
+        /* Llamada a la función sumarRango */
+        const resultado = sumarRango(nInicial, nFinal);
+        
+        /* Resultados */
+        document.write("<h3>Resultado:</h3>");
+        document.write(`<p>La suma del rango entre ${nInicial} y ${nFinal} es: ${resultado}</p>`); /* Muestra el resultado por pantalla */
+    </script>
+</body>
+</html>
