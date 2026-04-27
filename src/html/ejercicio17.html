@@ -1,0 +1,54 @@
+<!-- DESARROLLO DEL EJERCICIO 17 - TP2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 - Programación Visual</title>
+</head>
+<body>
+    <h1>Ejercicio 17</h1>
+    <h2>Contar la cantidad de letras "a" de una cadena de texto</h2>
+    <script>
+        /* Función para contar la cantidad de letras "a" en una cadena de texto */
+        const contarLetraA = (cadena) => {
+            let cadenaMinuscula = cadena.toLowerCase(); // Convertir la cadena a minúsculas para contar tanto "a" como "A"
+            let contadorA = 0;
+
+            /*Bucle FOR para recorrer la cadena y contar las letras "a" */
+            for(let i=0; i < cadenaMinuscula.length; i++) {
+                if(cadenaMinuscula[i] === 'a') {
+                    contadorA++;
+                }
+            }
+            return contadorA; /* Devolver la cantidad de letras "a" encontradas */
+        }
+
+        /* Variables para almacenar la cadena de texto ingresada por el usuario y su validación */
+        let cadenaUsuario;
+        let esValida = false; /* Variable para validar la cadena de texto ingresada por el usuario */
+
+        do{
+            /* Solicitud de la cadena de texto por pantalla */
+            cadenaUsuario = prompt("Ingrese una cadena de texto: "); 
+
+            /* Verifica que el usuario haya ingresado una cadena de texto */
+            if(cadenaUsuario !== null && cadenaUsuario !== "") {
+                esValida = true;
+            } 
+            else{
+                alert("No se ingresó una cadena de texto válida. Por favor, ingrese una cadena de texto nuevamente."); /* Mensaje de error por pantalla si no se ingresa una cadena de texto válida */
+            }  
+        }
+        while(!esValida); /* Repetir el proceso hasta que se ingrese una cadena de texto válida */
+
+        /* Llamada a la función contarLetraA */
+        const cantidadDeLetrasA = contarLetraA(cadenaUsuario);
+
+        /* Resultado */
+        document.write("<h3>Resultado:</h3>");
+        document.write(`<p>La cantidad de letras "a" en la cadena "${cadenaUsuario}" es: ${cantidadDeLetrasA}</p>`); /* Muestra el resultado por pantalla */
+    </script>
+</body>
+</html>
