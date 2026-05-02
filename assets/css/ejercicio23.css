@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #dddddd;
+}
+
+#inputTexto{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+    min-height: 5px;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+}
+
+div {
+    margin-top: 3px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+    min-height: 20px;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+}
