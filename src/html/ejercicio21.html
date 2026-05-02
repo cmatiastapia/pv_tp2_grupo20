@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21 - Países y Capitales</title>
+    <link rel="stylesheet" href="../css/ejercicio21.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Países y Provincias/Estados de América</h1>
+        <p class="subtitle">Selecciona un país para ver sus provincias/estados</p>
+        
+        <div class="selector-group">
+            <div class="selector-item">
+                <label for="paises">Países:</label>
+                <select id="paises">
+                    <option value="">-- Selecciona un país --</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="canada">Canadá</option>
+                    <option value="chile">Chile</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="mexico">México</option>
+                </select>
+            </div>
+            
+            <div class="selector-item">
+                <label for="provincias">Provincias/Estados:</label>
+                <select id="provincias" disabled>
+                    <option value="">-- Selecciona un país primero --</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="info-box" id="infoBox">
+            <p id="infoText">Selecciona un país para ver sus provincias/estados</p>
+        </div>
+    </div>
+    
+    <script type="module" src="../js/ejercicio21.js"></script>
+</body>
+</html>
