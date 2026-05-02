@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: 'arial';
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,23 +7,18 @@ body {
     background-color: #dddddd;
 }
 
-#inputTexto{
-    margin-top: 50px;
-    margin-bottom: 40px;
-    padding: 25px;
-    border: 1px solid #ccc;
+#inputTexto, div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
     min-width: 500px;
-    min-height: 5px;
+    min-height: 25px;
     border-radius: 10px;
-    background-color: #e5e5e5;
+    background-color: #ffff;
 }
 
-div {
-    margin-top: 3px;
-    padding: 25px;
-    border: 1px solid #ccc;
-    min-width: 500px;
-    min-height: 20px;
-    border-radius: 10px;
-    background-color: #e5e5e5;
+.fondoTextoLargo {
+    background-color: #cd6060;
+    border: 1px solid #000000;
 }
