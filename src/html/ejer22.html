@@ -1,0 +1,36 @@
+<!-- Construir una página utilizando Html, Css y JavaScript que permita al usuario escribir
+en un campo de texto (<input>), y que a medida que escribe, el texto se muestre
+automáticamente en otro elemento de la página (por ejemplo, un <p>).
+Usar un elemento <input type="text"> para que el usuario pueda escribir.
+Mostrar el texto ingresado en un elemento Html como un <p> o un <div>.
+Aplicar estilos básicos con Css para que la interfaz sea clara y prolija.
+Usar JavaScript para capturar el evento input y actualizar el contenido dinámicamente.-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <title>Ejercicio 22</title>
+   <link rel="stylesheet" href="../../assets/css/ejercicio22.css">
+
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Reflejo de Texto</h2>
+        <input type="text" id="miInput" placeholder="Escribe algo aquí...">
+        
+      <div class="resultado">
+        <p>Lo que escribes se verá abajo:</p>
+        <h3 id="espejo"></h3>
+        </div>
+    </div>
+
+    <!-- El type="module" es  para usar import/export -->
+    <script type="module" src="../js/ejercicio22.js"></script>
+
+</body>
+
+
+
+
+</html>
