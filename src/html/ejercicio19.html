@@ -1,0 +1,67 @@
+<!--
+19. Mostrar en una página html un párrafo de texto y un botón, aplicar estilos css. 
+Crear un script que capture el evento clic del botón y que cambie el texto del párrafo 
+por otro.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            min-height: 80px;
+        }
+        
+        button {
+            background-color: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #764ba2;
+        }
+        
+        button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="miParrafo">Este es el texto original del párrafo. Haz clic en el botón para cambiar el texto.</p>
+        <button id="miBoton">Cambiar Texto</button>
+    </div>
+    <script type="module" src="../js/ejercicio19.js"></script>
+</body>
+</html>
