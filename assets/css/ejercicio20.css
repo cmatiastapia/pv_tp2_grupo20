@@ -1,0 +1,108 @@
+:root {
+    --color-primario: #2563eb;
+    --color-secundario: #1d4ed8;
+    --color-fondo: #f1f5f9;
+    --color-card: rgba(255, 255, 255, 0.9);
+    --color-texto: #1e293b;
+    --color-borde: #cbd5f5;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: url('../images/ejercicio20.jpg') no-repeat center center/cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor {
+    background: var(--color-card);
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+
+input {
+    width: 100%;
+    max-width: 340px;
+    margin: 5px auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+
+input:hover {
+    border-color: var(--color-primario);
+}
+
+
+input:focus {
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 6px rgba(93, 37, 235, 0.2);
+    transform: scale(1.02);
+}
+button {
+    width: 100%;
+    max-width: 340px;
+    margin: 20px auto 0;
+    display: block;
+    padding: 12px;
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+button:hover {
+    transform: scale(1.04);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.5);
+}
+
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    border-left: 5px solid var(--color-primario);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#resultado:hover {
+    border-color:brown;
+    /* transform: scale(1.04); */
+    box-shadow: 0 12px 25px grey
+}
