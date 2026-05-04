@@ -1,4 +1,4 @@
-import {descripcionStack} from '../../services/serviceEjercicio24.js';
+import {descripcionStack} from '../services/serviceEjercicio24.js';
 
 // Botones
 const botonStack = document.querySelectorAll('input[name="stack"]');

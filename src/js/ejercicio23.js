@@ -1,4 +1,4 @@
-import {textoLargo} from "../../services/serviceEjercicio23.js";
+import {textoLargo} from "../services/serviceEjercicio23.js";
 
 const ingresoTexto = document.querySelector('#inputTexto');
 const salidaTexto = document.querySelector('#ouputTexto');
