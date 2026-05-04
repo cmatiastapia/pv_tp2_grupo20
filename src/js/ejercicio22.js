@@ -1,4 +1,4 @@
-import { actualizarTexto } from "../../services/service22.js";
+import { actualizarTexto } from "../services/serviceEjercicio22.js";
 // 1. Capturamos los elementos por su ID
 const inputUsuario = document.getElementById('miInput');
 const textoEspejo = document.getElementById('espejo');

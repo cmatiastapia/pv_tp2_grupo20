@@ -10,7 +10,6 @@ Este repositorio contiene el desarrollo del TP N° 2 enfocado en la implementaci
 | Carlos, Gisella Yanina | 5541 | gisela1234 |
 | Tapia, Carlos Matias | 6492 | cmatiastapia |
 | Poma, Aldana Sabrina | 6126 | pomasabrina |
-| Marquez, Yamila Soledad | 4629 | - |
 
 ## 🛠️ Tecnologías y estándares de desarrollo
 Para este trabajo práctico, el grupo se rige por los siguientes estándares técnicos obligatorios:
@@ -22,17 +21,31 @@ Para este trabajo práctico, el grupo se rige por los siguientes estándares té
 ## 📂 Estructura del Proyecto
 ```text
 pv_tp2_grupo20
-├── /src                    
-|   ├── /html                # Desarrollo de ejercicios HTML
-|   |  ├── /ejercicio9.html 
-|   |  └── ...
-|   │
-|   └── /js                  # Desarrollo de ejercicios JavaScript
-|      ├── /ejercicio1.js
-|      └── ...
 |
-├── index.html               # Página principal
-└── README.md                # Documentación del proyecto
+├── /assets
+|   ├── /css                            # Desarrollo de ejercicios CSS
+|   |   ├── /ejercicios.css 
+|   |   └── ...
+|   |
+|   └── /images                         # Imagenes del proyecto
+|       ├── /imagen1.jpg
+|       └── ...
+|
+├── /src                    
+|   ├── /html                           # Desarrollo de ejercicios HTML
+|   |   ├── /ejercicios.html 
+|   |   └── ...
+|   │
+|   ├── /js                             # Desarrollo de ejercicios JavaScript
+|   |    ├── /ejercicios.js
+|   |    └── ...
+|   |
+|   └── /services                       # Desarrollo de servicios JavaScript
+|        ├── /servicesEjercicios.js
+|        └── ...
+|
+├── index.html                          # Página principal
+└── README.md                           # Documentación del proyecto
 ```
 ---
 
